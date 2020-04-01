@@ -30,4 +30,6 @@ RUN yum install -y \
     composer \
     && yum clean all
 
-RUN ln -s /opt/remi/php74/enable /etc/profile.d/php.sh
+ENV PATH=/opt/remi/php74/root/usr/bin:/opt/remi/php74/root/usr/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin
+ENV LD_LIBRARY_PATH=/opt/remi/php74/root/usr/lib64
+ENV MANPATH=/opt/remi/php74/root/usr/share/man:
