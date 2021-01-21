@@ -8,6 +8,7 @@ RUN yum install -y \
     zip \
     gettext \
     php74-php-cli \
+    php74-php-intl \
     php74-php-json \
     php74-php-gd \
     php74-php-mbstring \
